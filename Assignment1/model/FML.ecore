@@ -15,10 +15,11 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Page">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
-      <details key="constraints" value="titleStartsUpperCase"/>
+      <details key="constraints" value="titleStartsUpperCase noCycles"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
       <details key="titleStartsUpperCase" value="Title.at(1) = Title.at(1).toUpper()"/>
+      <details key="noCycles" value="self.predecessor->asSet()->union(self.predecessor->closure(p | p.predecessor))->excludes(self)"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="predecessor" eType="#//Page"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -27,6 +28,12 @@
         eType="#//PageElement" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PageElement" eSuperTypes="#//DisplayElement #//InputElement">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="uniqueID"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="uniqueID" value="PageElement.allInstances()->forAll(e1, e2 | e1 &lt;> e2 implies e1.oclAsType(PageElement).ID &lt;> e2.oclAsType(PageElement).ID)"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="visible" eType="#//onlyVisibleIfSelected"/>
   </eClassifiers>
