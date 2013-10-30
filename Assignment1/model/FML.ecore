@@ -20,8 +20,7 @@
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
       <details key="titleStartsUpperCase" value="Title.at(1) = Title.at(1).toUpper()"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="predecessor" upperBound="-1"
-        eType="#//Page" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="predecessor" eType="#//Page"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="isWelcome" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="consists" upperBound="-1"
