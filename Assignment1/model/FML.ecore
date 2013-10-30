@@ -38,7 +38,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DisplayElement" abstract="true" eSuperTypes="#//PageElement">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="visible" eType="#//onlyVisibleIfSelected"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="visibleIfSelected" upperBound="-1"
+        eType="#//SelectionItem"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Heading" eSuperTypes="#//DisplayElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Level" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
@@ -82,9 +83,5 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="preselected" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="selected" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="onlyVisibleIfSelected">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ifSelected" upperBound="-1"
-        eType="#//SelectionItem"/>
   </eClassifiers>
 </ecore:EPackage>
