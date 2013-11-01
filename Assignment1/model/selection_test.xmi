@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fml:Form xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:fml="http://fml/1.0"
+    xsi:schemaLocation="http://fml/1.0 form.ecore">
+  <organized
+      Title="Page1"
+      isWelcome="true">
+    <consists
+        xsi:type="fml:TextParagraph"
+        ID="1"
+        visibleIfSelected="//@organized.1/@consists.0/@consists.0"
+        Text="page 1 text 1"/>
+    <consists
+        xsi:type="fml:TextParagraph"
+        ID="2"
+        Text="page 1 text 2"/>
+  </organized>
+  <organized
+      predecessor="//@organized.0"
+      Title="Page2">
+    <consists
+        xsi:type="fml:SelectField"
+        ID="3">
+      <consists
+          element="//@organized.0/@consists.0"/>
+      <consists
+          element="//@organized.2/@consists.0"/>
+    </consists>
+  </organized>
+  <organized
+      predecessor="//@organized.1"
+      Title="Page3">
+    <consists
+        xsi:type="fml:TextParagraph"
+        ID="4"
+        visibleIfSelected="//@organized.1/@consists.0/@consists.1"
+        Text="page 3 text 1"/>
+    <consists
+        xsi:type="fml:TextParagraph"
+        Text="page 3 text 2"/>
+  </organized>
+</fml:Form>
