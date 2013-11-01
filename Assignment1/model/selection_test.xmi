@@ -9,24 +9,21 @@
       isWelcome="true">
     <consists
         xsi:type="fml:TextParagraph"
-        ID="1"
-        visibleIfSelected="//@organized.1/@consists.0/@consists.0"
-        Text="page 1 text 1"/>
+        Text="page 1 text"/>
     <consists
-        xsi:type="fml:TextParagraph"
-        ID="2"
-        Text="page 1 text 2"/>
+        xsi:type="fml:TextInput"
+        Label="page 1 input"/>
   </organized>
   <organized
       predecessor="//@organized.0"
       Title="Page2">
     <consists
-        xsi:type="fml:SelectField"
-        ID="3">
+        xsi:type="fml:SelectField">
       <consists
-          element="//@organized.0/@consists.0"/>
+          Text="visible"
+          displayElementVisible="//@organized.2/@consists.0 //@organized.2/@consists.1"/>
       <consists
-          element="//@organized.2/@consists.0"/>
+          Text="invisible"/>
     </consists>
   </organized>
   <organized
@@ -34,11 +31,11 @@
       Title="Page3">
     <consists
         xsi:type="fml:TextParagraph"
-        ID="4"
-        visibleIfSelected="//@organized.1/@consists.0/@consists.1"
-        Text="page 3 text 1"/>
+        visibleIfSelected="//@organized.1/@consists.0/@consists.0"
+        Text="page 3 text"/>
     <consists
-        xsi:type="fml:TextParagraph"
-        Text="page 3 text 2"/>
+        xsi:type="fml:TextInput"
+        visibleIfSelected="//@organized.1/@consists.0/@consists.0"
+        Label="page 3 input"/>
   </organized>
 </fml:Form>
