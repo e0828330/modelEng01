@@ -85,7 +85,7 @@
       <details key="constraints" value="selectionIsOfSubsequentPage"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
-      <details key="selectionIsOfSubsequentPage" value="self.displayElementVisible -> isEmpty() or self.displayElementVisible.contained.predecessor->asSet()->union(self.displayElementVisible.contained.predecessor->closure(p | p.predecessor))->includes(self.contained.contained)"/>
+      <details key="selectionIsOfSubsequentPage" value="self.displayElementVisible -> forAll(e |e.contained.predecessor->asSet()->union(e.contained.predecessor->closure(p | p.predecessor))->includes(self.contained.contained))"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="preselected" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
