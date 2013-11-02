@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fml:Form xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fml="http://fml/1.0">
+  <organized Title="Registration information" isWelcome="true">
+    <consists xsi:type="fml:Heading" ID="1" Level="1" Text="Registration"/>
+    <consists xsi:type="fml:Heading" ID="2" Level="2" Text="Registration conditions"/>
+    <consists xsi:type="fml:TextParagraph" ID="3" Text="To be able to register, you have to fulfill the following conditions:"/>
+    <consists xsi:type="fml:List" ID="4">
+      <consists Text="You have to live in Austria."/>
+      <consists Text="You have to be current full-time student of a Viennese university."/>
+    </consists>
+    <consists xsi:type="fml:Heading" ID="5" Level="2" Text="Registration procedure"/>
+    <consists xsi:type="fml:TextParagraph" ID="6" Text="The registration is a two-phase process:"/>
+    <consists xsi:type="fml:List" ID="7" isOrdered="true">
+      <consists Text="First you have to fill in the registration form."/>
+      <consists Text="Your application will be confirmed by E-Mail."/>
+    </consists>
+  </organized>
+  <organized predecessor="//@organized.0" Title="Personal data">
+    <consists xsi:type="fml:Heading" ID="8" Level="1" Text="Personal data"/>
+    <consists xsi:type="fml:TextInput" ID="9" Label="First name" Type="TEXTFIELD"/>
+    <consists xsi:type="fml:TextInput" ID="10" Label="Last name:" Type="TEXTFIELD" Content=""/>
+    <consists xsi:type="fml:TextInput" ID="11" isMandatory="true" Label="E-Mail*:" Type="TEXTFIELD"/>
+    <consists xsi:type="fml:TextInput" ID="12" Label="Address:"/>
+    <consists xsi:type="fml:TextInput" ID="13" isMandatory="true" Label="Username*:" Type="TEXTFIELD"/>
+    <consists xsi:type="fml:TextInput" ID="14" isMandatory="true" Label="Password*:" Type="ENCRYPTED_TEXTFIELD"/>
+    <consists xsi:type="fml:SelectField" ID="15" isMandatory="true" Label="Are you student at a Viennese university?">
+      <consists Text="Yes" displayElementVisible="//@organized.2/@consists.1"/>
+      <consists Text="No"/>
+    </consists>
+  </organized>
+  <organized predecessor="//@organized.1" Title="University information">
+    <consists xsi:type="fml:Heading" ID="16" Level="1" Text="University information"/>
+    <consists xsi:type="fml:SelectField" visibleIfSelected="//@organized.1/@consists.7/@consists.0" Label="At which university are you studying?" Type="CHECKBOX">
+      <consists Text="University of Vienna" preselected="true"/>
+      <consists Text="Vienna University of Technology"/>
+      <consists Text="Vienna University of Economics and Business"/>
+      <consists Text="University of Natural Resources and Life Science"/>
+    </consists>
+  </organized>
+</fml:Form>
