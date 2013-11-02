@@ -60,7 +60,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="consists" lowerBound="1"
         upperBound="-1" eType="#//ListItem" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ListItem" eSuperTypes="#//List">
+  <eClassifiers xsi:type="ecore:EClass" name="ListItem">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InputElement" abstract="true" eSuperTypes="#//PageElement">
