@@ -14,7 +14,7 @@
       <details key="constraints" value="oneWelcomePage oneFirstPage"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
-      <details key="oneWelcomePage" value="self.organized->select(p | p.isWelcome)->size() = 1 and self.organized.predecessor->isEmpty()"/>
+      <details key="oneWelcomePage" value="self.organized->select(p | p.isWelcome)->size() = 1 and self.organized->select(p | p.isWelcome)->forAll(p | p.predecessor->isEmpty())"/>
       <details key="oneFirstPage" value="self.organized->select(p | p.predecessor->isEmpty())->size() = 1"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="organized" lowerBound="1"
@@ -77,6 +77,12 @@
     <eLiterals name="ENCRYPTED_TEXTFIELD" value="2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SelectField" eSuperTypes="#//InputElement">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="RadioOnlyOneSelected"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="RadioOnlyOneSelected" value="self.Type &lt;> SelectionType::RADIO or (self.consists->forAll(i | i.preselected)->size() &lt;= 1 and self.consists->forAll(i | i.selected)->size() &lt;= 1)"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Type" eType="#//SelectionType"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="consists" lowerBound="1"
