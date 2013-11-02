@@ -74,6 +74,7 @@
   <eClassifiers xsi:type="ecore:EEnum" name="TextInputType">
     <eLiterals name="TEXTAREA"/>
     <eLiterals name="TEXTFIELD" value="1"/>
+    <eLiterals name="ENCRYPTED_TEXTFIELD" value="2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SelectField" eSuperTypes="#//InputElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

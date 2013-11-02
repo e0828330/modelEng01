@@ -215,6 +215,10 @@
         <element xmi:type="ecore:EEnumLiteral" href="form.ecore#//TextInputType/TEXTAREA"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_yms_VULvEeOQb-2t_pi_8g"/>
       </children>
+      <children xmi:type="notation:Node" xmi:id="_Cv9REEPQEeOqp5fJQ1538Q" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="form.ecore#//TextInputType/ENCRYPTED_TEXTFIELD"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Cv9REUPQEeOqp5fJQ1538Q"/>
+      </children>
       <children xmi:type="notation:Node" xmi:id="_yms_VkLvEeOQb-2t_pi_8g" type="2006">
         <element xmi:type="ecore:EEnumLiteral" href="form.ecore#//TextInputType/TEXTFIELD"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_yms_V0LvEeOQb-2t_pi_8g"/>
@@ -272,7 +276,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_ymuNdULvEeOQb-2t_pi_8g" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EEnum" href="form.ecore#//SelectionType"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ymuNdkLvEeOQb-2t_pi_8g" x="340" y="5"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ymuNdkLvEeOQb-2t_pi_8g" x="385" y="5"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_ymvbkkLvEeOQb-2t_pi_8g" type="1001">
     <children xmi:type="notation:Node" xmi:id="_ymvblULvEeOQb-2t_pi_8g" type="4001"/>
