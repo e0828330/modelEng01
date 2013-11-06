@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fml:Form xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fml="http://fml/1.0">
+  <organized Title="Our Title" isWelcome="true">
+    <consists xsi:type="fml:TextInput" ID="1"/>
+    <consists xsi:type="fml:TextInput" ID="2"/>
+  </organized>
+</fml:Form>
