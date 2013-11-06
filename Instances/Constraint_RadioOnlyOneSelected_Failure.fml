@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fml:Form xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fml="http://fml/1.0">
+  <organized Title="Page 1" isWelcome="true">
+    <consists xsi:type="fml:SelectField" ID="1">
+      <consists Text="A" selected="true"/>
+      <consists Text="B" selected="true"/>
+    </consists>
+  </organized>
+</fml:Form>
