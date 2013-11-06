@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fml:Form xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fml="http://fml/1.0">
+  <organized Title="Page 1" isWelcome="true">
+    <consists xsi:type="fml:TextInput" visibleIfSelected="//@organized.1/@consists.0/@consists.0" ID="1"/>
+  </organized>
+  <organized predecessor="//@organized.0" Title="Page 2">
+    <consists xsi:type="fml:SelectField" ID="2" Type="COMBOBOX">
+      <consists Text="A" displayElementVisible="//@organized.0/@consists.0"/>
+    </consists>
+  </organized>
+</fml:Form>
