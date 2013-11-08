@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<fml:Form xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:fml="http://fml/1.0">
-  <organized Title="Page 1"/>
-  <organized predecessor="//@organized.0" Title="Page 2"/>
-  <organized predecessor="//@organized.1" Title="Page 3"/>
-  <organized predecessor="//@organized.3" Title="Page 4"/>
+<fml:Form xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:fml="http://fml/1.0">
+  <organized
+      Title="Page 1"
+      isWelcome="true"/>
+  <organized
+      predecessor="//@organized.0"
+      Title="Page 2"/>
+  <organized
+      predecessor="//@organized.1"
+      Title="Page 3"/>
+  <organized
+      predecessor="//@organized.2"
+      Title="Page 4"/>
 </fml:Form>
