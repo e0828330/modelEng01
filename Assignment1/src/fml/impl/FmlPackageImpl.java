@@ -854,7 +854,7 @@ public class FmlPackageImpl extends EPackageImpl implements FmlPackage {
 		  (selectFieldEClass, 
 		   source, 
 		   new String[] {
-			 "RadioOnlyOneSelected", "self.Type <> SelectionType::RADIO or (self.consists->forAll(i | i.preselected)->size() <= 1 and self.consists->forAll(i | i.selected)->size() <= 1)"
+			 "RadioOnlyOneSelected", "self.Type <> SelectionType::RADIO or (self.consists->select(preselected)->size() <= 1 and self.consists->select(selected)->size() <= 1)"
 		   });			
 		addAnnotation
 		  (selectionItemEClass, 

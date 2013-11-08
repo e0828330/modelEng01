@@ -10,8 +10,7 @@
       <!-- @generated form -->
       <package
             uri="http://fml/1.0"
-            class="fml.FmlPackage"
-            genModel="model/form.genmodel"/>
+            class="fml.FmlPackage"/>
    </extension>
 
 </plugin>

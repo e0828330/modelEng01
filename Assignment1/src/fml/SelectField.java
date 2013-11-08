@@ -20,7 +20,7 @@ import org.eclipse.emf.common.util.EList;
  *
  * @see fml.FmlPackage#getSelectField()
  * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='RadioOnlyOneSelected'"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot RadioOnlyOneSelected='self.Type <> SelectionType::RADIO or (self.consists->forAll(i | i.preselected)->size() <= 1 and self.consists->forAll(i | i.selected)->size() <= 1)'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot RadioOnlyOneSelected='self.Type <> SelectionType::RADIO or (self.consists->select(preselected)->size() <= 1 and self.consists->select(selected)->size() <= 1)'"
  * @generated
  */
 public interface SelectField extends InputElement {

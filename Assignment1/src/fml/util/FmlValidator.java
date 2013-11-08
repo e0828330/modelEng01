@@ -472,7 +472,7 @@ public class FmlValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final String SELECT_FIELD__RADIO_ONLY_ONE_SELECTED__EEXPRESSION = "self.Type <> SelectionType::RADIO or (self.consists->forAll(i | i.preselected)->size() <= 1 and self.consists->forAll(i | i.selected)->size() <= 1)";
+	protected static final String SELECT_FIELD__RADIO_ONLY_ONE_SELECTED__EEXPRESSION = "self.Type <> SelectionType::RADIO or (self.consists->select(preselected)->size() <= 1 and self.consists->select(selected)->size() <= 1)";
 
 	/**
 	 * Validates the RadioOnlyOneSelected constraint of '<em>Select Field</em>'.
