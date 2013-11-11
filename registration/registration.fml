@@ -30,7 +30,7 @@
   </organized>
   <organized predecessor="//@organized.1" Title="University information">
     <consists xsi:type="fml:Heading" ID="16" Level="1" Text="University information"/>
-    <consists xsi:type="fml:SelectField" visibleIfSelected="//@organized.1/@consists.7/@consists.0" Label="At which university are you studying?" Type="CHECKBOX">
+    <consists xsi:type="fml:SelectField" visibleIfSelected="//@organized.1/@consists.7/@consists.0" Label="At which university are you studying? (Only answer this question if you answered the previous question with 'Yes')" Type="CHECKBOX">
       <consists Text="University of Vienna" preselected="true"/>
       <consists Text="Vienna University of Technology"/>
       <consists Text="Vienna University of Economics and Business"/>
